@@ -82,7 +82,7 @@ public class App {
 
 		slides.add(new PictureSlide(App.class.getResource("slides/slides.007.jpeg")));
 
-		slides.add(new VideoSlide(App.class.getResource("car.mp4"), App.class.getResource("slides/slides.009.jpeg"),
+		slides.add(new VideoSlide(App.class.getResource("car.mp4"), App.class.getResource("slides/slides.008.jpeg"),
 				EndAction.PAUSE_AT_END));
 
 		slides.add(new InmoovDemo(App.class.getResource("slides/slides.009.jpeg"))); // 9
