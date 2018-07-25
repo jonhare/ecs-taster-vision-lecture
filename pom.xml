@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.ac.soton.ecs.summerschool</groupId>
-  <artifactId>Vision101-2017</artifactId>
+  <artifactId>Vision101-2018</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>Vision101-2016</name>
+  <name>Vision101-2018</name>
   <url>http://summerschool.ecs.soton.ac.uk</url>
   <properties>
     <openimaj.version>1.4-SNAPSHOT</openimaj.version>
