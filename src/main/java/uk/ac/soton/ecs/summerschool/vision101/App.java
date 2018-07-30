@@ -114,15 +114,15 @@ public class App {
 
 		slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", 41))));
 		
-		slides.set(42, new SpeakingSlide(App.class.getResource("slides/slides.042.jpeg"),
+		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.042.jpeg"),
 				"a man is climbing up a rock face"));
-		slides.set(43, new SpeakingSlide(App.class.getResource("slides/slides.043.jpeg"),
+		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.043.jpeg"),
 				"a motorcycle racer is driving a turn on a racetrack"));
-		slides.set(44, new SpeakingSlide(App.class.getResource("slides/slides.044.jpeg"),
+		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.044.jpeg"),
 				"a basketball player in a red uniform is trying to score a player in the air"));
-		slides.set(45, new SpeakingSlide(App.class.getResource("slides/slides.045.jpeg"),
+		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.045.jpeg"),
 				"a man in a red shirt is riding a bike on a snowy hill"));
-		slides.set(46, new SpeakingSlide(App.class.getResource("slides/slides.046.jpeg"),
+		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.046.jpeg"),
 				"a surfer is jumping off a snowy hill"));
 
 		for (int i = 47; i <= 49; i++)
