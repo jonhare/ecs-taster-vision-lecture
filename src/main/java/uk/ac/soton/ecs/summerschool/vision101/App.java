@@ -45,6 +45,8 @@ import org.openimaj.content.slideshow.SlideshowApplication;
 import org.openimaj.content.slideshow.VideoSlide;
 import org.openimaj.video.VideoDisplay.EndAction;
 
+import uk.ac.soton.ecs.summerschool.vision101.utils.SpeakingSlide;
+
 /**
  * ECS Summer School Computer Vision Lecture
  */
@@ -110,7 +112,20 @@ public class App {
 
 		slides.add(new BadTomatoDemo(App.class.getResource(String.format("slides/slides.%03d.jpeg", 40)))); // 40
 
-		for (int i = 41; i <= 47; i++)
+		slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", 41))));
+		
+		slides.set(42, new SpeakingSlide(App.class.getResource("slides/slides.065.jpg"),
+				"a man is climbing up a rock face"));
+		slides.set(43, new SpeakingSlide(App.class.getResource("slides/slides.066.jpg"),
+				"a motorcycle racer is driving a turn on a racetrack"));
+		slides.set(44, new SpeakingSlide(App.class.getResource("slides/slides.067.jpg"),
+				"a basketball player in a red uniform is trying to score a player in the air"));
+		slides.set(45, new SpeakingSlide(App.class.getResource("slides/slides.068.jpg"),
+				"a man in a red shirt is riding a bike on a snowy hill"));
+		slides.set(46, new SpeakingSlide(App.class.getResource("slides/slides.069.jpg"),
+				"a surfer is jumping off a snowy hill"));
+
+		for (int i = 47; i <= 49; i++)
 			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
 
 		new SlideshowApplication(slides, 1024, 768, getBackground());
