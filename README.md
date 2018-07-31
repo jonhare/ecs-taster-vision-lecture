@@ -1,7 +1,7 @@
 # ECS Taster 2016 Computer Vision Lecture
 This Github repository stores the interactive slides for the computer vision lecture at the [ECS Taster Course](http://taster.ecs.soton.ac.uk) at the [University of Southampton](http://www.soton.ac.uk). The slides were built using [OpenIMAJ](http://www.openimaj.org).
 
-From this page you can get the source-code for the presentation, which you can build yourself following the instructions below. If you just want to run the presentation, you can download the latest version of the pre-compiled runnable jar from [here](http://jenkins.ecs.soton.ac.uk/job/ecs-taster-vision-lecture-2016/lastBuild/artifact/target/Vision101-2016-1.0-SNAPSHOT-jar-with-dependencies.jar). 
+From this page you can get the source-code for the presentation, which you can build yourself following the instructions below. If you just want to run the presentation, you can download the latest version of the pre-compiled runnable jar from [here](http://jenkins.ecs.soton.ac.uk/job/ecs-taster-vision-lecture-2018/lastBuild/artifact/target/Vision101-2018-1.0-SNAPSHOT-jar-with-dependencies.jar). 
 
 ## Operating the presentation
 You'll need a recent version of [Java](http://www.oracle.com/technetwork/java/index.html) installed to run the presentation. Most of the interactive demos require a webcam to be webcam to be plugged in, although the actual presentation should launch without one. 
