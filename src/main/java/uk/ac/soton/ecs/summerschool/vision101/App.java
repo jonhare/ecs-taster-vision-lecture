@@ -96,7 +96,7 @@ public class App {
 		for (int i = 12; i <= 26; i++)
 			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
 
-		slides.add(new SimpleCameraDemo("iSight")); // 27
+		slides.add(new SimpleCameraDemo("USB Camera")); // 27
 
 		for (int i = 28; i <= 29; i++)
 			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
