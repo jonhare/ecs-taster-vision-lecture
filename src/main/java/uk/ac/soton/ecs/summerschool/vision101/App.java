@@ -125,7 +125,7 @@ public class App {
 		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.046.jpeg"),
 				"a surfer is jumping off a snowy hill"));
 
-		for (int i = 47; i <= 49; i++)
+		for (int i = 47; i <= 48; i++)
 			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
 
 		new SlideshowApplication(slides, 1024, 768, getBackground());

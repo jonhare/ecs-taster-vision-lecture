@@ -29,9 +29,6 @@
  */
 package uk.ac.soton.ecs.summerschool.vision101;
 
-import gnu.trove.list.TIntList;
-import gnu.trove.list.array.TIntArrayList;
-
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -71,6 +68,8 @@ import org.openimaj.math.geometry.point.Point2dImpl;
 import org.openimaj.video.VideoDisplay;
 import org.openimaj.video.VideoDisplayListener;
 
+import gnu.trove.list.TIntList;
+import gnu.trove.list.array.TIntArrayList;
 import uk.ac.soton.ecs.summerschool.vision101.inmoov.Servo;
 import uk.ac.soton.ecs.summerschool.vision101.inmoov.ServoController;
 import uk.ac.soton.ecs.summerschool.vision101.utils.VideoCaptureComponent;
@@ -82,15 +81,15 @@ import uk.ac.soton.ecs.summerschool.vision101.utils.VideoCaptureComponent;
  *
  */
 public class InmoovDemo implements Slide, VideoDisplayListener<MBFImage>, ActionListener, KeyListener {
-	protected static final int PAN_CENTRE_PW = 1900;
+	protected static final int PAN_CENTRE_PW = 2100;
 
 	ServoController controller;
-	final Servo pan = new Servo(0, PAN_CENTRE_PW, 1450, 2400);
+	final Servo pan = new Servo(0, PAN_CENTRE_PW, 1500, 2700);
 
 	final Servo eyesTilt = new Servo(2, 1900, 1600, 1950);
 	final Servo leftEye = new Servo(4, 1650, 1400, 1650);
 	final Servo rightEye = new Servo(6, 1950, 1700, 2100);
-	final Servo mouth = new Servo(8, 2000, 2000, 2450);
+	final Servo mouth = new Servo(8, 1950, 1950, 2500);
 	final Servo tilt = new Servo(10, 1900, 1100, 2400);
 
 	protected VideoCaptureComponent vc;
@@ -222,11 +221,11 @@ public class InmoovDemo implements Slide, VideoDisplayListener<MBFImage>, Action
 		}
 
 		try {
-			mouth.setPW(2450);
+			mouth.setPW(2500);
 			Runtime.getRuntime().exec("say " + string).waitFor();
 			lastString = string;
 			lastTime = System.currentTimeMillis();
-			mouth.setPW(2000);
+			mouth.setPW(1850);
 			Thread.sleep(100);
 			mouth.setOff();
 		} catch (final IOException | InterruptedException e) {
@@ -247,8 +246,7 @@ public class InmoovDemo implements Slide, VideoDisplayListener<MBFImage>, Action
 	private static void detect(Contour root, List<Contour> found) {
 		if (test(root)) {
 			found.add(root);
-		}
-		else {
+		} else {
 			for (final Contour child : root.children) {
 				detect(child, found);
 			}
@@ -354,8 +352,8 @@ public class InmoovDemo implements Slide, VideoDisplayListener<MBFImage>, Action
 
 			if (faces == null || faces.size() == 0) {
 				// move back towards center
-				final int panPW = (PAN_CENTRE_PW - pan.getPW()) / 5;
-				pan.changePWRelative(panPW);
+				// final int panPW = (PAN_CENTRE_PW - pan.getPW()) / 5;
+				// pan.changePWRelative(panPW);
 			} else {
 				outframe.drawShape(faces.get(0).getBounds(), RGBColour.RED);
 
