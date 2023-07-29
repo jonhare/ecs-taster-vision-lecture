@@ -87,7 +87,7 @@ public class App {
 		slides.add(new VideoSlide(App.class.getResource("car.mp4"), App.class.getResource("slides/slides.008.jpeg"),
 				EndAction.PAUSE_AT_END));
 
-		slides.add(new InmoovDemo(App.class.getResource("slides/slides.009.jpeg"))); // 9
+		// slides.add(new InmoovDemo(App.class.getResource("slides/slides.009.jpeg"))); // 9
 
 		slides.add(new PictureSlide(App.class.getResource("slides/slides.010.jpeg")));
 
@@ -96,34 +96,34 @@ public class App {
 		for (int i = 12; i <= 26; i++)
 			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
 
-		slides.add(new SimpleCameraDemo("USB Camera")); // 27
+		// slides.add(new SimpleCameraDemo("FaceTime")); // 27
 
 		for (int i = 28; i <= 29; i++)
 			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
 
 		slides.add(new SimpleMeanColourFeatureDemo()); // 30
 		slides.add(new StickyFeaturesDemo()); // 31
-		slides.add(new PDMDemo()); // EXTRA
+		// slides.add(new PDMDemo()); // EXTRA
 		slides.add(new CLMDemo()); // 32
 		slides.add(new PuppeteerDemo()); // 33
 
-		for (int i = 34; i <= 39; i++)
-			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
+		// for (int i = 34; i <= 39; i++)
+		// 	slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));
 
-		slides.add(new BadTomatoDemo(App.class.getResource(String.format("slides/slides.%03d.jpeg", 40)))); // 40
+		// slides.add(new BadTomatoDemo(App.class.getResource(String.format("slides/slides.%03d.jpeg", 40)))); // 40
 
-		slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", 41))));
+		// slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", 41))));
 		
-		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.042.jpeg"),
-				"a man is climbing up a rock face"));
-		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.043.jpeg"),
-				"a motorcycle racer is driving a turn on a racetrack"));
-		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.044.jpeg"),
-				"a basketball player in a red uniform is trying to score a player in the air"));
-		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.045.jpeg"),
-				"a man in a red shirt is riding a bike on a snowy hill"));
-		slides.add(new SpeakingSlide(App.class.getResource("slides/slides.046.jpeg"),
-				"a surfer is jumping off a snowy hill"));
+		// slides.add(new SpeakingSlide(App.class.getResource("slides/slides.042.jpeg"),
+		// 		"a man is climbing up a rock face"));
+		// slides.add(new SpeakingSlide(App.class.getResource("slides/slides.043.jpeg"),
+		// 		"a motorcycle racer is driving a turn on a racetrack"));
+		// slides.add(new SpeakingSlide(App.class.getResource("slides/slides.044.jpeg"),
+		// 		"a basketball player in a red uniform is trying to score a player in the air"));
+		// slides.add(new SpeakingSlide(App.class.getResource("slides/slides.045.jpeg"),
+		// 		"a man in a red shirt is riding a bike on a snowy hill"));
+		// slides.add(new SpeakingSlide(App.class.getResource("slides/slides.046.jpeg"),
+		// 		"a surfer is jumping off a snowy hill"));
 
 		for (int i = 47; i <= 48; i++)
 			slides.add(new PictureSlide(App.class.getResource(String.format("slides/slides.%03d.jpeg", i))));

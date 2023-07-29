@@ -73,7 +73,7 @@ public class CLMDemo implements Slide, VideoDisplayListener<MBFImage> {
 		final JPanel base = new JPanel();
 		base.setPreferredSize(new Dimension(width, height));
 		base.setLayout(new GridBagLayout());
-		vc = new VideoCaptureComponent(640, 480, "USB Camera");
+		vc = new VideoCaptureComponent(640, 480, "FaceTime");
 		vc.getDisplay().addVideoListener(this);
 		base.add(vc);
 

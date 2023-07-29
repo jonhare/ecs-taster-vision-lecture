@@ -75,7 +75,7 @@ public class PuppeteerDemo extends SimpleCameraDemo implements VideoDisplayListe
 	 * @throws IOException
 	 */
 	public PuppeteerDemo() throws MalformedURLException, IOException {
-		super("USB Camera");
+		super("FaceTime");
 		tracker.fcheck = true;
 
 		final CLMFaceTracker ptracker = new CLMFaceTracker();
